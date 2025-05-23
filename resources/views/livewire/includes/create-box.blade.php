@@ -21,9 +21,11 @@
                         class="px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">Create
                         +</button>
                     
-                    @if (session('success'))
-                        <span class="text-green-500 text-xs">{{ session('success') }}</span>
+                    <div>
+                        @if (session('success'))
+                        <span class="mt-1 text-green-500 text-xs">{{ session('success') }}</span>
                     @endif
+                    </div>
 
                 </form>
             </div>

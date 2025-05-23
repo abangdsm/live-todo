@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App template</title>
+    <title>{{ $title }}</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -14,6 +14,7 @@
         <div class="w-full">
             <header class="flex bg-white justify-between h-20 border-b border-b-gray-200 items-center px-6">
                 <div id="left-header" class="">
+                    <h2 class="font-semibold text-lg text-gray-800 mb-0">{{ $title }}</h2>
                 </div>
                 <div id="right-header" class="text-gray-800 hover:text-gray-600 space-x-3">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
